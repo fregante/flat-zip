@@ -1,5 +1,5 @@
 import test from 'ava';
-import flatZip from '.';
+import {flatZip} from '.';
 
 test('flatZip', t => {
 	t.deepEqual(

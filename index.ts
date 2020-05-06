@@ -1,5 +1,5 @@
 /** Concats arrays but does so like a zipper instead of appending them. Like lodash.zip + lodash.flat, plus a total limit */
-export default function flatZip<T>(table: T[][], limit = Infinity): T[] {
+export function flatZip<T>(table: T[][], limit = Infinity): T[] {
 	if (limit <= 0) {
 		return [];
 	}

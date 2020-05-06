@@ -12,11 +12,11 @@ npm install flat-zip
 ```
 
 ```js
-import flatZip from 'flat-zip';
+import {flatZip} from 'flat-zip';
 ```
 
 ```js
-const flatZip = require('flat-zip');
+const {flatZip} = require('flat-zip');
 ```
 
 ## Usage
