@@ -1,0 +1,66 @@
+{
+	"name": "flat-zip",
+	"version": "0.0.0",
+	"description": "Concats arrays but does so like a zipper instead of appending them. Like lodash.zip + lodash.flat, plus a length limit",
+	"keywords": [
+		"concat",
+		"zip",
+		"alternate",
+		"rotate",
+		"array",
+		"sequence",
+		"set",
+		"merge",
+		"combine",
+		"column"
+	],
+	"repository": "fregante/flat-zip",
+	"license": "MIT",
+	"author": "Federico Brigante <opensource@bfred.it> (bfred.it)",
+	"main": "./cjs/index.js",
+	"module": "./esm/index.js",
+	"files": [
+		"cjs",
+		"esm"
+	],
+	"scripts": {
+		"ava": "ava",
+		"build": "run-p build:*",
+		"build:cjs": "tsc",
+		"build:esm": "tsc --module es2015 --outDir esm",
+		"prepack": "npm run build",
+		"test": "run-p build ava xo",
+		"watch": "run-p 'build:* -- --watch'",
+		"xo": "xo"
+	},
+	"xo": {
+		"envs": [
+			"browser"
+		],
+		"rules": {
+			"@typescript-eslint/prefer-readonly-parameter-types": "off",
+			"comma-dangle": [
+				"error",
+				"always-multiline"
+			]
+		}
+	},
+	"ava": {
+		"extensions": [
+			"ts"
+		],
+		"require": [
+			"esm",
+			"ts-node/register"
+		]
+	},
+	"devDependencies": {
+		"@sindresorhus/tsconfig": "^0.7.0",
+		"ava": "^3.8.1",
+		"esm": "^3.2.25",
+		"npm-run-all": "^4.1.5",
+		"ts-node": "^8.10.1",
+		"typescript": "^3.8.3",
+		"xo": "^0.30.0"
+	}
+}
