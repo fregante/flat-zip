@@ -1,7 +1,7 @@
 {
 	"name": "flat-zip",
 	"version": "1.0.1",
-	"description": "Concats arrays but does so like a zipper instead of appending them. Like lodash.zip + lodash.flat, plus a length limit",
+	"description": "Merges arrays like a zipper. Like `lodash.zip().flat().take(limit)` but a tenth of the size!",
 	"keywords": [
 		"concat",
 		"zip",
