@@ -1,4 +1,4 @@
-# flat-zip [![][badge-gzip]][link-bundlephobia]
+# <img align="right" width="400" src="https://user-images.githubusercontent.com/1402241/81488643-bab80700-926b-11ea-8d04-1ef3431eb819.gif"> flat-zip [![][badge-gzip]][link-bundlephobia]
 
 [badge-gzip]: https://img.shields.io/bundlephobia/minzip/flat-zip.svg?label=gzipped
 [link-bundlephobia]: https://bundlephobia.com/result?p=flat-zip
